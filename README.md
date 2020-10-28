@@ -15,6 +15,7 @@ Install packages with npm i packagename like this:
 5. Install dotenv (npm i dotenv)
 
 
+
 ---Adding Express to a Node App---
 1. // Import the express module
 
@@ -136,5 +137,11 @@ API_KEY=abc123 (or whatever your key is)
 2. sequelize init will create the config.json, models and migrations directories
 3. To create the database enter: sequelize db:create db_name (and db_name is the name of the database you want to create)
 4. Then create the models by running: sequelize model:create --name user --attributes firstName:string,lastName:string,age:integer,email:string with whatever table columns and types you want. 
+
+**WINDOWS USERS**
+To get things working properly, with anything involving sequelize
+Need to enter
+Username and Password for SQL shell, and "Dialect": "postgres"
+
 
 The word after --name will be the name of your model. Running this command will create the js file in your /models directory which you should check.
